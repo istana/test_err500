@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Err500demo</title>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to "OK", controller: 'application', action: 'ok' %>
+<%= link_to "Exception", controller: 'application', action: 'wrong' %>
+<br>
+<%= yield %>
+
+</body>
+</html>
